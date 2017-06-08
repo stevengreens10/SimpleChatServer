@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Chat Server</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.9/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.9/addons/p5.dom.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.9/addons/p5.sound.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.1/socket.io.js"></script>
+    <script src="main.js"></script>
+
+    <style>
+      p{
+        font-family: serif;
+        font-size: 15px;
+      }
+	  
+	  div#namecontainer{
+		margin-top: 50px;
+		border-top: 1px solid black;
+	  }
+	  
+	  ul#names{
+		margin:0;
+		padding:0;
+	  }
+	  
+	  ul#names li{
+		display:inline;
+		padding: 10px;
+	  }
+	  
+    </style>
+  </head>
+
+  <body bgcolor="#ede24b" align="center">
+	<div id="container">
+		<div id="messages"></div>
+		<div id="textbox"></div>
+		<div id="namecontainer">
+			<h3 id="usercount">Users</h3>
+			<ul id="names">
+				
+			</ul>
+		</div>
+	</div>
+  </body>
+</html>
